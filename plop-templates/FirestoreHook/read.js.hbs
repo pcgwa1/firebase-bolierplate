@@ -1,0 +1,22 @@
+import { db } from '../../config/firebase'
+
+const {{camelCase name}} = () => dispatch => {
+  db.collection("collection-name").get().then((querySnapshot) => {
+    let data = []
+    querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+        data.push(doc.data())
+    })
+    return data
+})
+.then((data) => {
+      console.log("data: ", data);
+      {{!-- dispatch(reduxAction(data)) --}}
+  })
+  .catch((error) => {
+      console.error("Error adding document: ", error);
+  });
+
+};
+
+export default {{camelCase name}};

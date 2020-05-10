@@ -1,0 +1,17 @@
+import { db } from '../../config/firebase'
+
+const {{camelCase name}} = () => dispatch => {
+  db.collection("collection-name").update({
+      
+  })
+  .then(function() {
+    console.log("Document successfully updated!");
+})
+.catch(function(error) {
+    // The document probably doesn't exist.
+    console.error("Error updating document: ", error);
+});
+
+};
+
+export default {{camelCase name}};

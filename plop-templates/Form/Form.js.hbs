@@ -1,0 +1,28 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { reduxForm } from 'redux-form'
+import styles from './{{pascalCase name}}.module.css';
+
+const {{pascalCase name}} = ({ handleSubmit }) => {
+  return (
+    <form onSubmit={handleSubmit} className={`styles.{{pascalCase name}}`}>
+
+    </form>
+  );
+};
+
+{{pascalCase name}}.defaultProps = {
+
+};
+
+{{pascalCase name}}.propTypes = {
+    handleSubmit: PropTypes.func.isRequired
+};
+
+const {{pascalCase name}}Form = reduxForm({
+    form: `{{pascalCase name}}`,
+    destroyOnUnmount: false,
+    forceUnregisterOnUnmount: true
+})({{pascalCase name}})
+
+export default {{pascalCase name}}Form

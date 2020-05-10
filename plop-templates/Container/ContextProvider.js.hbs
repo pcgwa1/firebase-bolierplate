@@ -1,0 +1,50 @@
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+export const {{pascalCase name}}Context = React.createContext()
+
+class {{pascalCase name}}Provider extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      data: null
+    }
+  }
+
+  componentDidMount() {
+    this.getData()
+  }
+
+  getData = () => {
+
+  }
+
+  render() {
+    const { data } = this.state
+    const { children  } = this.props
+
+    const providerData = { data }
+    return (
+      <{{pascalCase name}}Context.Provider value={providerData}>
+        {children}
+      </{{pascalCase name}}Context.Provider>
+    )
+  }
+}
+
+{{pascalCase name}}Provider.defaultProps = {
+  children: PropTypes.object
+};
+
+{{pascalCase name}}Provider.propTypes = {
+  children: {}
+};
+
+function mapStateToProps (state) {
+  return {
+    //redux data
+  }
+}
+
+export default connect(mapStateToProps, null)({{pascalCase name}}Provider)

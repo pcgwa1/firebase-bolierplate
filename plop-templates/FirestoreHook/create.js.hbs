@@ -1,0 +1,17 @@
+import { db } from '../../config/firebase'
+
+const {{camelCase name}} = () => dispatch => {
+  db.collection("collection-name").add({
+      
+  })
+  .then((docRef) => {
+      console.log("Document written with ID: ", docRef.id);
+      {{!-- dispatch(reduxAction(data)) --}}
+  })
+  .catch((error) => {
+      console.error("Error adding document: ", error);
+  });
+
+};
+
+export default {{camelCase name}};

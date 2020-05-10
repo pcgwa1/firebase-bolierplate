@@ -1,0 +1,29 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import {{pascalCase name}}Provider, { {{pascalCase name}}Context } from './{{pascalCase name}}Provider'
+
+const {{pascalCase name}} = props => {
+  return (
+    <{{pascalCase name}}Provider>
+      <{{pascalCase name}}Context>
+          {({ data }) => {
+              return (
+                <div>
+                  {{pascalCase name}}-Context
+                </div>
+              )
+          }}
+      </{{pascalCase name}}Context>
+    </{{pascalCase name}}Provider>
+  );
+};
+
+{{pascalCase name}}.defaultProps = {
+
+};
+
+{{pascalCase name}}.propTypes = {
+
+};
+
+export default {{pascalCase name}}
