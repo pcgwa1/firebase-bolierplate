@@ -4,13 +4,13 @@ import 'firebase/firestore'
 import 'firebase/functions'
 
 const config = {
-  apiKey: "AIzaSyC_4Nc6dwnIp1_jNm4rWKCU2djKgxQRyyA",
-  authDomain: "react-fb-boilerplate.firebaseapp.com",
-  databaseURL: "https://react-fb-boilerplate.firebaseio.com",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
   projectId: "react-fb-boilerplate",
-  storageBucket: "react-fb-boilerplate.appspot.com",
-  messagingSenderId: "974356619867",
-  appId: "1:974356619867:web:a97aeb67ed3c11269e557e"
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 }
 
 export const fbApp = firebase.initializeApp(config);
